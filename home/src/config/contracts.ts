@@ -1,5 +1,5 @@
 // GhostStake contract deployed on Sepolia (set the deployed address before going live)
-export const CONTRACT_ADDRESS = '0x0000000000000000000000000000000000000000';
+export const CONTRACT_ADDRESS = '0xA56555A5d5f39685d9180542859AD9fBffCeC4ED';
 
 // Generated ABI from deployments/sepolia/GhostStake.json
 export const CONTRACT_ABI = [
