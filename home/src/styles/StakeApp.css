@@ -1,0 +1,252 @@
+.stake-app {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f3f4f6 0%, #ffffff 60%);
+}
+
+.stake-main {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+.stake-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.stake-card {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+  padding: 1.75rem;
+}
+
+.stake-card-title {
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1.5rem;
+}
+
+.stake-hint {
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+.stake-balance-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.stake-balance-item {
+  padding: 0.85rem 1rem;
+  border-radius: 0.75rem;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.stake-balance-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #6b7280;
+}
+
+.stake-balance-handle {
+  font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  font-size: 0.9rem;
+  color: #1f2937;
+}
+
+.stake-decrypted-section {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.stake-decrypted-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.stake-decrypted-item {
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background-color: #f8fafc;
+  border: 1px solid #dbeafe;
+}
+
+.stake-decrypted-label {
+  display: block;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #1d4ed8;
+  margin-bottom: 0.4rem;
+}
+
+.stake-decrypted-value {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.stake-action-button {
+  align-self: flex-start;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  border: none;
+  background: linear-gradient(135deg, #2563eb 0%, #4c1d95 100%);
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.stake-action-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+  box-shadow: none;
+  transform: none;
+}
+
+.stake-action-button:not(:disabled):hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(37, 99, 235, 0.25);
+}
+
+.stake-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.stake-feedback {
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.stake-feedback-success {
+  background-color: #ecfdf5;
+  color: #047857;
+  border: 1px solid #6ee7b7;
+}
+
+.stake-feedback-error {
+  background-color: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fca5a5;
+}
+
+.stake-feedback-info {
+  background-color: #eff6ff;
+  color: #1d4ed8;
+  border: 1px solid #bfdbfe;
+}
+
+.stake-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.stake-form-label {
+  font-weight: 600;
+  color: #111827;
+  font-size: 0.95rem;
+}
+
+.stake-form-row {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.stake-input {
+  flex: 1;
+  padding: 0.65rem 0.85rem;
+  border-radius: 0.65rem;
+  border: 1px solid #cbd5f5;
+  font-size: 1rem;
+  background-color: #f9fafb;
+  color: #111827;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stake-input:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.15);
+}
+
+.stake-secondary-button {
+  padding: 0.6rem 1.25rem;
+  border-radius: 0.65rem;
+  border: none;
+  background: linear-gradient(135deg, #14b8a6 0%, #0f766e 100%);
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.stake-secondary-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+  transform: none;
+  box-shadow: none;
+}
+
+.stake-secondary-button:not(:disabled):hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 18px rgba(20, 184, 166, 0.25);
+}
+
+.stake-notes {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background-color: #f8fafc;
+  color: #475569;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.stake-notes p {
+  margin: 0.25rem 0;
+}
+
+@media (min-width: 820px) {
+  .stake-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .stake-main {
+    padding: 1.5rem 1rem 2.5rem;
+  }
+
+  .stake-card {
+    padding: 1.5rem;
+  }
+
+  .stake-form-row {
+    flex-direction: column;
+  }
+
+  .stake-secondary-button {
+    width: 100%;
+  }
+
+  .stake-action-button {
+    width: 100%;
+    text-align: center;
+  }
+}
